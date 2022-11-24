@@ -1,4 +1,4 @@
-# weather-web-app
+# Weather-web-app
 ## Table of Contents
 
 1. About the Project 
@@ -8,7 +8,7 @@
 
 ## About the Project
 
-A simple and responsive Weather web app built using HTML, CSS and Javascript. It uses OpenWeatherMap Api to fetch Temperature, Weather, Humidity & Wind Speed details. We uses javascript to fetch exact location coordinates of the user. Background images are download from daily used web-browser 
+A simple and responsive Weather web app built using HTML, CSS and Javascript. It uses OpenWeatherMap Api to fetch Temperature, Weather, Humidity & Wind Speed details. We use javascript to fetch the exact location coordinates of the user. Background images are downloaded from daily used web-browser 
 
 ## Built With
 
