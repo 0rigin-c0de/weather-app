@@ -4,7 +4,7 @@
 1. About the Project 
 2. Built with 
 3. Installation
-4. License
+
 
 ## About the Project
 
