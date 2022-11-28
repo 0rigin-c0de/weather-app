@@ -7,6 +7,13 @@ const wrapper = document.querySelector(".wrapper"),
   arrowBack = wrapper.querySelector("header i");
 let url;
 
+inputField.addEventListener("keyup", (e) => {
+  if (e.key == "Enter" && inputField.value != "") {
+    console.log("HELLO");
+    requestApi(inputField.value);
+  }
+});
+
 locationBtn.addEventListener("click", () => {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(onSuccess, onError);
@@ -18,7 +25,8 @@ locationBtn.addEventListener("click", () => {
 function onSuccess(position) {
   const { longitude, latitude } = position.coords;
   const apikey = "2d4ead0c457b554e818493a791ce4c34";
-  url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apikey}`;
+
+  url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apikey}&units=metric`;
 
   fetchData(url);
 }
@@ -27,14 +35,11 @@ function onError(error) {
   infoTxt.innerText = error.message;
   infoTxt.classList.add("error");
 }
+const apikey = "2d4ead0c457b554e818493a791ce4c34";
+function requestApi(city) {
+  url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apikey}`;
+}
 
-// function fetchData(url) {
-//   infoTxt.innerText = "Getting Weather Details.......";
-//   infoTxt.classList.add("pending");
-//   fetch(url) //api for the get request
-//     .then((response) => response.json())
-//     .then((data) => console.log(data));
-// }
 function fetchData() {
   infoTxt.innerText = "Getting weather details...";
   infoTxt.classList.add("pending");
@@ -47,7 +52,7 @@ function fetchData() {
     });
 }
 function weatherDetails(info) {
-  if (info.cod == "") {
+  if (info.cod == "404") {
     infoTxt.classList.replace("pending", "error");
     infoTxt.innerText = `${inputField.value} isn't a valid city name`;
   } else {
@@ -68,6 +73,7 @@ function weatherDetails(info) {
     infoTxt.innerText = "";
     inputField.value = "";
     wrapper.classList.add("active");
+    // console.log(info);
   }
 }
 arrowBack.addEventListener("click", () => {
