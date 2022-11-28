@@ -8,11 +8,11 @@
 
 ## About the Project
 
-A simple and responsive Weather web app built using HTML, CSS and Javascript. It uses OpenWeatherMap Api to fetch Temperature, Weather, Humidity & Wind Speed details. We use javascript to fetch the exact location coordinates of the user. Background images are downloaded from daily used web-browser 
+A simple and responsive Weather web app built using HTML, CSS and Javascript. It uses OpenWeatherMap API to fetch Temperature, Weather, Humidity & Wind Speed details. We use javascript to fetch the exact location coordinates of the user. Background images are downloaded from daily used web-browser 
 
 ## Built With
 
-- Html & Css
+- Html & CSS
 - JavaScript
 - Open WeatherMap API
 
@@ -24,6 +24,5 @@ To get a local copy up and running, just Clone the repo
 git clone https://github.com/0rigin-c0de/weather-app.git
 ```
 
-and fire up the Local Development server using [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+and fire up the Local Development server using the [Live](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)[ Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
-## License
