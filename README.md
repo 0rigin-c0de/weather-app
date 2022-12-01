@@ -23,5 +23,4 @@ To get a local copy up and running, just Clone the repo
 git clone https://github.com/0rigin-c0de/weather-app.git
 ```
 
-and fire up the Local Development server using the [Live](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)[ Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
-
+and fire up the Local Development server using the [Live](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)[ Server extension]
